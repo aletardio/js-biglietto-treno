@@ -8,6 +8,7 @@ let price_final = '';
 
 
 if (age <= 17) {
+    // Istruzioni per il calcolo del prezzo scontato del 20%
     let sale = price_start * 20 / 100;
     price_final = price_start - sale;
     ticket_price = `Hai diritto ad uno sconto! Il prezzo del tuo biglietto
@@ -15,6 +16,7 @@ if (age <= 17) {
 }
 
 else if (age >= 65) {
+    // Istruzioni per il calcolo del prezzo scontato del 40%
     let sale = price_start * 40 / 100;
     price_final = price_start - sale;
     ticket_price = `Hai diritto ad uno sconto! Il prezzo del tuo biglietto
@@ -22,6 +24,7 @@ else if (age >= 65) {
 }
 
 else {
+    // Istruzioni per il calcolo del prezzo non scontato
     price_final = price_start;
     ticket_price = `Non hai diritto ad uno sconto! Il prezzo del tuo biglietto
     è di: ${price_final.toFixed(2)}€`;
